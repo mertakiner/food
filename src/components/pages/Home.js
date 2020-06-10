@@ -4,7 +4,7 @@ class Home extends Component {
 
   state = {
     meetingArea: [
-      "Ar-ge ",
+      "Ar-ge",
       "Post-Covid",
       "Agile",
       "Big Data",
