@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, HashRouter } from "react-router-dom";
+import { BrowserRouter as HashRouter, Route } from "react-router-dom";
 import Navbar from "./components/layouts/Navbar";
 import About from "./components/pages/About";
 import Home from "./components/pages/Home";
@@ -8,8 +8,7 @@ import Meetings from "./components/pages/Meetings";
 
 function App() {
   return (
-    <HashRouter>
-      <Router>
+      <HashRouter basename="/">
         <div className="App">
           <Navbar />
           <div className="container mx-auto">
@@ -19,8 +18,7 @@ function App() {
           </div>
         </div>
           <Footer />
-      </Router>
-    </HashRouter>
+      </HashRouter>
   );
 }
 
